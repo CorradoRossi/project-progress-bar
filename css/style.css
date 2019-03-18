@@ -1,0 +1,133 @@
+
+body {
+    font: 110%/1.5 "HelveticaNeue", "Helvetica", "Arial", sans-serif;
+    padding: 0;
+    margin: 0;
+    background:#DBDAE3;
+    color: #110000;
+    text-transform: lowercase;
+}
+.progress {
+	padding: 1em;
+}
+progress, progress[role] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	border-radius: 5px;
+	background: #cdcaa2;
+	background-size: auto;
+	width: 100%;
+	height: 4em;
+}
+/* Progress bar background */
+progress::-webkit-progress-bar {
+	background: #7F7FA9;
+}
+/* Progress bar value */
+progress::-moz-progress-bar {
+	background: #22296F;
+}
+progress::-webkit-progress-value {
+	background: #22296F;
+}
+.anim::-moz-progress-bar {
+	-moz-transition: width 3s ease-out;
+}
+.anim::-webkit-progress-value {
+	-webkit-transition: width 3s ease-out;
+	-o-transition: width 3s ease-out;
+  	transition: width 3s ease-out;
+}
+.project-progress.start::-moz-progress-bar {
+	width: 0% !important;
+	background: #cdcaa2 !important;
+}
+.project-progress.start::-webkit-progress-value {
+	width: 0% !important;
+	background: #cdcaa2 !important;
+
+}
+.project-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.project {
+	position: relative;
+	margin-bottom: 1em;
+}
+.project h3 {
+	color: #fff;
+	position: absolute;
+	top: 0.2em;
+	left: 1em;
+	line-height: 1;
+	border: 0;
+}
+/* Project Types */
+.project-website progress::-moz-progress-bar {
+	background: #115EFB;
+}
+.project-website progress::-webkit-progress-value {
+	background: #115EFB;
+}
+.project-talk progress::-moz-progress-bar {
+	background: #03015c;
+}
+.project-talk progress::-webkit-progress-value {
+	background: #03015c;
+}
+.project-book progress::-moz-progress-bar {
+	background: #286996;
+}
+.project-book progress::-webkit-progress-value {
+	background: #286996;
+}
+.project-music progress::-moz-progress-bar {
+	background: #1E35A1;
+}
+.project-music progress::-webkit-progress-value {
+	background: #1E35A1;
+}
+.project-art progress::-moz-progress-bar {
+	background: #17171F;
+}
+.project-art progress::-webkit-progress-value {
+	background: #17171F;
+}
+/* Color Key */
+.key-list {
+	overflow: hidden;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.key-list li {
+	float: left;
+	color: #fff;
+	font-weight: bold;
+	margin-right: 1em;
+	padding: 1em;
+}
+.key-product {
+	background: #191921;
+}
+.key-website {
+	background: #115EFB;
+}
+.key-talk {
+	background: #03015c;
+}
+.key-book {
+	background: #286996;
+}
+.key-music {
+	background: #1E35A1;
+}
+.key-art {
+	background: #17171F;
+}
+.key-talk {
+	background: #03015c;
+}
