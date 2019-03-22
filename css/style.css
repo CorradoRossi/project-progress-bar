@@ -31,10 +31,8 @@ progress::-moz-progress-bar {
 progress::-webkit-progress-value {
 	background: #22296F;
 }
-.anim::-moz-progress-bar {
-	-moz-transition: width 3s ease-out;
-}
 .anim::-webkit-progress-value {
+    -moz-transition: width 3s ease-out;
 	-webkit-transition: width 3s ease-out;
 	-o-transition: width 3s ease-out;
   	transition: width 3s ease-out;

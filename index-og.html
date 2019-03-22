@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>Progress | MotoRossi Web</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="main" role="main">
+	<div class="progress">
+		<ul class="project-list" id="project-list">
+			<li class="project project-website">
+				<h3>motorossi.me redesign</h3>
+				<progress class="project-progress" max="100" value="80">
+					<strong>Progress: 80%</strong>
+				</progress>
+			</li>
+			<li class="project project-website">
+				<h3>nopoventures.com redesign</h3>
+				<progress class="project-progress" max="100" value="60">
+					<strong>Progress: 60%</strong>
+				</progress>
+			</li>
+			<li class="project project-tool">
+				<h3>Github resources list</h3>
+				<progress class="project-progress" max="100" value="55">
+					<strong>Progress: 55%</strong>
+				</progress>
+			</li>
+			<li class="project project-music">
+				<h3>Mountains In The Sky album</h3>
+				<progress class="project-progress" max="100" value="10">
+					<strong>Progress: 10%</strong>
+				</progress>
+			</li>
+			<li class="project project-book">
+				<h3>Short Story collection</h3>
+				<progress class="project-progress" max="100" value="98">
+					<strong>Progress: 98%</strong>
+				</progress>
+			</li>
+
+			<li class="project project-tool">
+				<h3>zsh script collection</h3>
+				<progress class="project-progress" max="100" value="10">
+					<strong>Progress: 10%</strong>
+				</progress>
+			</li>
+			<li class="project project-website">
+				<h3>frugaltricks.com redesign</h3>
+				<progress class="project-progress" max="100" value="20">
+					<strong>Progress: 20%</strong>
+				</progress>
+			</li>
+			<li class="project project-tool">
+				<h3>Roots DigitalOcean project</h3>
+				<progress class="project-progress" max="100" value="95">
+					<strong>Progress: 95%</strong>
+				</progress>
+			</li>
+			<li class="project project-art">
+				<h3>Dribbble collection</h3>
+				<progress class="project-progress" max="100" value="15">
+					<strong>Progress: 15%</strong>
+				</progress>
+			</li>
+		</ul>
+
+		<div class="key">
+			<ul class="key-list">
+				<li class="key-product">Tool</li>
+				<li class="key-website">Website</li>
+				<li class="key-music">Music</li>
+				<li class="key-art">Art</li>
+				<li class="key-book">Book</li>
+				<li class="key-talk">Talk</li>
+			</ul>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		var progress = document.querySelectorAll(".project-progress");
+		[].forEach.call(progress, function(el) {
+			el.classList.add("start");
+			setTimeout(function() { el.classList.remove("start"); el.classList.add("anim")  }, 10);
+		});
+	</script>
+
+</div><!--End role=main-->
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '#']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+</body>
+</html>
